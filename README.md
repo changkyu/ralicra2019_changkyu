@@ -6,17 +6,19 @@ We present a probabilistic approach for building, on the fly, 3-D models of unkn
 
 # Pipeline
 
-![pipeline]()
+![pipeline](.readme/img/ralicra2019_pipeline.jpg)
 
 # Dataset
 
 Our dataset with YCB objects includes the tabletop scenes as well as piles of objects inside a tight box that can be seen in the attached video. Objects in this dataset are severely occluded. We split the dataset into two subsets, one with only static scenes and another with only dynamic ones. Static scenes are 12 in total. Dynamic scenes, 13 in total, include at least one robotic pushing action per scene. The dataset contains the color and depth images as well as our segmentation results and their ground truth volume occupancy. You can download the dataset [[HERE]](https://drive.google.com/file/d/1yhG99jXpBgQ0GaNy3Qq7QH8FZBymzvrb/view?usp=sharing)
 
-![dataset example 1]()
+![dataset example 1](.readme/img/ralicra2019_dataset.jpg)
 
 # Results
 
-
+![result1](.readme/img/ralicra2019_res1.jpg)
+![result2](.readme/img/ralicra2019_res2.jpg)
+![result3](.readme/img/ralicra2019_res3.jpg)
 
 # Author
 

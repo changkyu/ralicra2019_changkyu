@@ -1,0 +1,9 @@
+<launch>
+
+<node pkg="live_camera" type="live_camera_node" name="live_camera" output="screen" />
+<param name="outdir" value="./" />
+<param name="show_image" type="bool" value="true" />
+<param name="show_depth" type="bool" value="true" />
+<param name="show_point" type="bool" value="true" />
+
+</launch>

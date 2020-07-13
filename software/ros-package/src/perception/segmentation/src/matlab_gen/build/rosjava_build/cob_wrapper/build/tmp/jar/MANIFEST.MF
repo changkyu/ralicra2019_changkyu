@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Export-Package: cob_wrapper;version="0.0.0";uses:="org.ros.internal.me
+ ssage,sensor_msgs"
+Bundle-Version: 0.0.0
+Tool: Bnd-2.1.0.20130426-122213
+Bundle-Name: cob_wrapper
+Bnd-LastModified: 1507706009000
+Created-By: 1.7.0_60 (Oracle Corporation)
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.ros.rosjava_messages.cob_wrapper
+Import-Package: org.ros.internal.message,sensor_msgs;version="[1.10,2)
+ "
+

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+    <include ns="iiwa" file = "$(find task_planning)/launch/iiwa_robotiq.launch"/>
+    <node ns="iiwa" name="random_push" pkg="random_push" type="random_push" respawn="false" output="screen"/>
+
+    <rosparam param="random_push">
+        action_distance: 0.10
+        hand_length: 0.26
+        effector_length: 0.20
+        effector_width: 0.01
+        min_x: 0.10
+        max_x: 1.00
+        min_y: -0.16
+        max_y: 0.16
+        min_z: -1.00
+        max_z: 1.00
+    </rosparam>
+    <rosparam param="random_push/cam_info" command="load" file="$(find realsense_camera)/conf/camera_info.yaml"/>
+
+</launch>

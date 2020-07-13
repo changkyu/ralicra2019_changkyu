@@ -1,0 +1,9 @@
+<launch>
+
+<node pkg="realsense_camera" type="capture" name="realsense_camera_node" />
+
+<param name="display" type="bool" value="false" />
+<param name="x_offset_depth2color" type="int" value="14" />
+<param name="y_offset_depth2color" type="int" value="-6" />
+
+</launch>

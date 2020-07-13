@@ -1,0 +1,25 @@
+<launch>
+
+<node pkg="segmentation" type="segmentation_node" name="segmentation_node" output="screen"/>
+
+<rosparam param="segmentation/lccp">
+    pub_name : "segmentation/lccp"
+    srv_name : "segmentation/lccp"
+</rosparam>
+
+<rosparam param="segmentation/lccp_2dseg">
+    pub_name : "segmentation/lccp_2dseg"
+    srv_name : "segmentation/lccp_2dseg"
+</rosparam>
+
+<rosparam param="segmentation">
+    topic_image : "/rgb/image"
+    topic_depth : "/depth/image"
+    topic_point : "/pointcloud"
+    topic_segcob : "/segmentation/cob"
+    topic_caminfo : "/depth/camera_info"
+</rosparam>
+
+<rosparam param="segmentation/camera_info" command="load" file="$(find realsense_camera)/conf/camera_info.yaml" />
+
+</launch>

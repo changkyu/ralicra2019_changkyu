@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+	<include ns="iiwa" file = "$(find task_planning)/launch/iiwa_robotiq.launch"/>
+	<node ns="iiwa" name="camera_calib_auto" pkg="camera_calib_auto" type="camera_calib_auto" respawn="false" output="screen"/>
+
+	<param name="camera_calib_auto/subtopic/pointcloud" value="/pointcloud" />
+	<param name="camera_calib_auto/outdir" value="$(find camera_calib_auto)/output" />
+    
+</launch>

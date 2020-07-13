@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Export-Package: segmentation;version="0.0.0";uses:="org.ros.internal.m
+ essage,sensor_msgs"
+Bundle-Version: 0.0.0
+Tool: Bnd-2.1.0.20130426-122213
+Bundle-Name: segmentation
+Bnd-LastModified: 1507706011000
+Created-By: 1.7.0_60 (Oracle Corporation)
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.ros.rosjava_messages.segmentation
+Import-Package: org.ros.internal.message,sensor_msgs;version="[1.10,2)
+ "
+
